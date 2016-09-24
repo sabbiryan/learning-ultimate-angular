@@ -9,7 +9,8 @@ import { MutualfundsComponent } from './mutualfunds/mutualfunds.component';
 import { HighlightDirective } from './highlight.directive';
 import { StockDirectiveDirective } from './stock-directive.directive';
 
-import {StockService} from './stocks/stocks.service'; 
+import {StockService} from './stocks/stocks.service';
+import { DateFormatorPipe } from './date-formator.pipe'; 
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {StockService} from './stocks/stocks.service';
     StockComponent,
     MutualfundsComponent,
     StockDirectiveDirective,
-    HighlightDirective
+    HighlightDirective,
+    DateFormatorPipe
   ],
   imports: [
     BrowserModule,
