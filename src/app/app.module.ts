@@ -12,6 +12,8 @@ import { StockDirectiveDirective } from './stock-directive.directive';
 import {StockService} from './stocks/stocks.service';
 import { DateFormatorPipe } from './date-formator.pipe'; 
 
+import {routing} from './app.routing';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { DateFormatorPipe } from './date-formator.pipe';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [StockService],
   bootstrap: [AppComponent]
