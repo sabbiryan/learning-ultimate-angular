@@ -14,6 +14,8 @@ import { DateFormatorPipe } from './date-formator.pipe';
 
 import {routing} from './app.routing';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import {routing} from './app.routing';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    NgbModule
   ],
   providers: [StockService],
   bootstrap: [AppComponent]
