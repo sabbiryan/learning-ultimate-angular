@@ -14,7 +14,7 @@ import { DateFormatorPipe } from './date-formator.pipe';
 
 import {routing} from './app.routing';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule, NgbAlert} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpModule,
     routing,
-    NgbModule
+    NgbModule.forRoot()
   ],
   providers: [StockService],
   bootstrap: [AppComponent]
